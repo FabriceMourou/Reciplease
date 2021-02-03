@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		E2000F7425CAFDC2004E6DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000F7325CAFDC2004E6DC4 /* AppDelegate.swift */; };
 		E2000F7625CAFDC2004E6DC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000F7525CAFDC2004E6DC4 /* SceneDelegate.swift */; };
-		E2000F7825CAFDC2004E6DC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000F7725CAFDC2004E6DC4 /* ViewController.swift */; };
 		E2000F7B25CAFDC2004E6DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2000F7925CAFDC2004E6DC4 /* Main.storyboard */; };
 		E2000F7D25CAFDC4004E6DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2000F7C25CAFDC4004E6DC4 /* Assets.xcassets */; };
 		E2000F8025CAFDC4004E6DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2000F7E25CAFDC4004E6DC4 /* LaunchScreen.storyboard */; };
 		E2000F8B25CAFDC4004E6DC4 /* RecipleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000F8A25CAFDC4004E6DC4 /* RecipleaseTests.swift */; };
 		E2000F9625CAFDC5004E6DC4 /* RecipleaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000F9525CAFDC5004E6DC4 /* RecipleaseUITests.swift */; };
+		E2000FB925CB030C004E6DC4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000FB825CB030C004E6DC4 /* SearchViewController.swift */; };
+		E2000FBE25CB0338004E6DC4 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000FBD25CB0338004E6DC4 /* FavoriteViewController.swift */; };
+		E2000FC325CB062C004E6DC4 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000FC225CB062C004E6DC4 /* RecipeDetailViewController.swift */; };
+		E2000FC825CB16F8004E6DC4 /* brownies cake.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2000FC725CB16F8004E6DC4 /* brownies cake.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		E2000F7025CAFDC2004E6DC4 /* Reciplease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciplease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2000F7325CAFDC2004E6DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2000F7525CAFDC2004E6DC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E2000F7725CAFDC2004E6DC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2000F7A25CAFDC2004E6DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2000F7C25CAFDC4004E6DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2000F7F25CAFDC4004E6DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		E2000F9125CAFDC5004E6DC4 /* RecipleaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipleaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2000F9525CAFDC5004E6DC4 /* RecipleaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipleaseUITests.swift; sourceTree = "<group>"; };
 		E2000F9725CAFDC5004E6DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2000FB825CB030C004E6DC4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E2000FBD25CB0338004E6DC4 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		E2000FC225CB062C004E6DC4 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		E2000FC725CB16F8004E6DC4 /* brownies cake.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "brownies cake.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,13 @@
 		E2000F7225CAFDC2004E6DC4 /* Reciplease */ = {
 			isa = PBXGroup;
 			children = (
+				E2000FC725CB16F8004E6DC4 /* brownies cake.otf */,
 				E2000F7325CAFDC2004E6DC4 /* AppDelegate.swift */,
 				E2000F7525CAFDC2004E6DC4 /* SceneDelegate.swift */,
-				E2000F7725CAFDC2004E6DC4 /* ViewController.swift */,
 				E2000F7925CAFDC2004E6DC4 /* Main.storyboard */,
+				E2000FC225CB062C004E6DC4 /* RecipeDetailViewController.swift */,
+				E2000FBD25CB0338004E6DC4 /* FavoriteViewController.swift */,
+				E2000FB825CB030C004E6DC4 /* SearchViewController.swift */,
 				E2000F7C25CAFDC4004E6DC4 /* Assets.xcassets */,
 				E2000F7E25CAFDC4004E6DC4 /* LaunchScreen.storyboard */,
 				E2000F8125CAFDC4004E6DC4 /* Info.plist */,
@@ -232,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2000F8025CAFDC4004E6DC4 /* LaunchScreen.storyboard in Resources */,
+				E2000FC825CB16F8004E6DC4 /* brownies cake.otf in Resources */,
 				E2000F7D25CAFDC4004E6DC4 /* Assets.xcassets in Resources */,
 				E2000F7B25CAFDC2004E6DC4 /* Main.storyboard in Resources */,
 			);
@@ -258,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2000F7825CAFDC2004E6DC4 /* ViewController.swift in Sources */,
+				E2000FB925CB030C004E6DC4 /* SearchViewController.swift in Sources */,
 				E2000F7425CAFDC2004E6DC4 /* AppDelegate.swift in Sources */,
+				E2000FBE25CB0338004E6DC4 /* FavoriteViewController.swift in Sources */,
+				E2000FC325CB062C004E6DC4 /* RecipeDetailViewController.swift in Sources */,
 				E2000F7625CAFDC2004E6DC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -446,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fabrice.mourou.Reciplease;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fabrice.mourou.Reciplease;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

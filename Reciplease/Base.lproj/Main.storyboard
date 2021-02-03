@@ -1,24 +1,270 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="poM-4g-lBW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="brownies cake.otf">
+            <string>browniescake</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--favorite-->
+        <scene sceneID="BdA-J7-hwg">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <navigationController id="Y9q-ff-W6y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="favorite" image="folder" catalog="system" id="uIX-kI-Mef"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OkI-YT-qB9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.91313681040000005" green="0.94712456599999995" blue="0.93958561610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="55"/>
+                            <color key="textColor" red="0.4078662851" green="0.54773220489999996" blue="0.13811680100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wk6-hB-c0f" kind="relationship" relationship="rootViewController" id="MXL-4a-Sgo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDA-Qp-9j6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1399" y="-394"/>
+        </scene>
+        <!--Reciplease-->
+        <scene sceneID="uMa-Gj-Zid">
+            <objects>
+                <viewController id="wk6-hB-c0f" customClass="FavoriteViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m30-3p-A8D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="19c8e65e2a0aa85e8e6912adcd95f9cd" translatesAutoresizingMaskIntoConstraints="NO" id="zaz-eU-exY">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3qe-HN-OgG"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3qe-HN-OgG" firstAttribute="trailing" secondItem="zaz-eU-exY" secondAttribute="trailing" id="Ov3-u7-3xh"/>
+                            <constraint firstItem="zaz-eU-exY" firstAttribute="top" secondItem="3qe-HN-OgG" secondAttribute="top" id="Qbm-hq-JUC"/>
+                            <constraint firstItem="zaz-eU-exY" firstAttribute="leading" secondItem="3qe-HN-OgG" secondAttribute="leading" id="nNx-Xx-Mft"/>
+                            <constraint firstItem="3qe-HN-OgG" firstAttribute="bottom" secondItem="zaz-eU-exY" secondAttribute="bottom" id="u3T-zb-FBe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reciplease" id="lNO-My-y6f">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="aHS-V6-frf"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YnX-fC-GhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="-394"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hh6-fX-dhd">
+            <objects>
+                <tabBarController id="poM-4g-lBW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5ju-9Y-AlW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.91313681040000005" green="0.94712456599999995" blue="0.93958561610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.4078662851" green="0.54773220489999996" blue="0.13811680100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wyy-KH-XOn" kind="relationship" relationship="viewControllers" id="p5c-al-Vtw"/>
+                        <segue destination="Y9q-ff-W6y" kind="relationship" relationship="viewControllers" id="Y9W-YL-bu3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNX-BJ-p6t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2793" y="278"/>
+        </scene>
+        <!--search-->
+        <scene sceneID="Ivi-T1-wTj">
+            <objects>
+                <navigationController id="wyy-KH-XOn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="search" image="magnifyingglass" catalog="system" id="5Fy-SU-LZE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="soB-XS-fqR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.91313681040000005" green="0.94712456599999995" blue="0.93958561610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.91313681040000005" green="0.94712456599999995" blue="0.93958561610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="55"/>
+                            <color key="textColor" red="0.40786628510831702" green="0.54773220486111107" blue="0.13811680102548118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="0.42834692839999999" blue="0.1721273582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="K7t-DD-A5J" kind="relationship" relationship="rootViewController" id="txx-yS-9pS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Tp-jR-1Or" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1400" y="840"/>
+        </scene>
+        <!--Reciplease-->
+        <scene sceneID="A2m-h2-exX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1S8-HU-TtS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="K7t-DD-A5J" customClass="SearchViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bMa-Qa-L4l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2d13d935b78706edd1ea9677f8ee7704" translatesAutoresizingMaskIntoConstraints="NO" id="RR4-1x-FQs">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDa-zY-3gR" userLabel="Add-Stack View">
+                                <rect key="frame" x="38.5" y="181.5" width="337" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7e-V1-kBi">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                        <color key="backgroundColor" red="0.91313681040000005" green="0.94712456599999995" blue="0.93958561610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="mbC-ru-Nqu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifo-x8-XVi">
+                                        <rect key="frame" x="297" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.4078662851" green="0.54773220489999996" blue="0.13811680100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="hJ1-5J-auu"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="pHB-5D-YDm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="24"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's in your fridge ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7Z-li-4fc">
+                                <rect key="frame" x="30" y="118" width="354" height="48.5"/>
+                                <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="45"/>
+                                <color key="textColor" red="0.30297309030000003" green="0.054751344760000001" blue="0.030606849240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.96513671869999995" green="0.66245624000000003" blue="0.095160104479999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="ZAw-Mh-lkQ" userLabel="Ingredients-Stack View">
+                                <rect key="frame" x="35.5" y="301.5" width="343.5" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Ingredients :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijj-Fl-X41">
+                                        <rect key="frame" x="0.0" y="0.0" width="239.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="j4O-Ei-nS6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="41"/>
+                                        <color key="textColor" red="0.30297309030000003" green="0.054751344760000001" blue="0.030606849240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.96513671869999995" green="0.66245624000000003" blue="0.095160104479999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-1" height="2"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PL-d4-spB">
+                                        <rect key="frame" x="283.5" y="0.0" width="60" height="40"/>
+                                        <color key="backgroundColor" red="0.96513671874999996" green="0.66245624004112391" blue="0.09516010447628713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="sG4-hp-D9h"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="zfd-Gl-f76"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="25"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" red="0.30297309027777775" green="0.054751344757250207" blue="0.030606849241806424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Apple" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="suY-TK-ssT">
+                                <rect key="frame" x="30" y="351.5" width="354" height="431.5"/>
+                                <color key="backgroundColor" red="0.91313681039590444" green="0.94712456597222228" blue="0.93958561611218461" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.30297309030000003" green="0.054751344760000001" blue="0.030606849240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="45"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-Mz-6dT">
+                                <rect key="frame" x="40" y="709" width="334" height="50"/>
+                                <color key="backgroundColor" red="0.4078662851" green="0.54773220489999996" blue="0.13811680100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HvC-L4-5jl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="45"/>
+                                <state key="normal" title="Search for recipes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Oyv-hp-ARV"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RR4-1x-FQs" firstAttribute="top" secondItem="Oyv-hp-ARV" secondAttribute="top" id="3O2-hb-PtV"/>
+                            <constraint firstItem="xEm-Mz-6dT" firstAttribute="leading" secondItem="Oyv-hp-ARV" secondAttribute="leading" constant="40" id="6vy-4D-bxM"/>
+                            <constraint firstItem="ZAw-Mh-lkQ" firstAttribute="centerX" secondItem="bMa-Qa-L4l" secondAttribute="centerX" id="B0a-Ip-zF7"/>
+                            <constraint firstItem="PDa-zY-3gR" firstAttribute="top" secondItem="S7Z-li-4fc" secondAttribute="bottom" constant="15" id="OQh-9N-Bvw"/>
+                            <constraint firstItem="S7Z-li-4fc" firstAttribute="centerX" secondItem="bMa-Qa-L4l" secondAttribute="centerX" id="OWi-69-bpm"/>
+                            <constraint firstItem="PDa-zY-3gR" firstAttribute="centerX" secondItem="bMa-Qa-L4l" secondAttribute="centerX" id="Vrv-hr-9gT"/>
+                            <constraint firstItem="Oyv-hp-ARV" firstAttribute="bottom" secondItem="RR4-1x-FQs" secondAttribute="bottom" id="eDP-Af-ar3"/>
+                            <constraint firstItem="Oyv-hp-ARV" firstAttribute="trailing" secondItem="RR4-1x-FQs" secondAttribute="trailing" id="fQU-Eq-Cjf"/>
+                            <constraint firstItem="Oyv-hp-ARV" firstAttribute="bottom" secondItem="suY-TK-ssT" secondAttribute="bottom" constant="30" id="fZr-tY-s1I"/>
+                            <constraint firstItem="S7Z-li-4fc" firstAttribute="top" secondItem="Oyv-hp-ARV" secondAttribute="top" constant="30" id="fq6-UR-wDg"/>
+                            <constraint firstItem="Oyv-hp-ARV" firstAttribute="trailing" secondItem="xEm-Mz-6dT" secondAttribute="trailing" constant="40" id="hU2-EY-XL8"/>
+                            <constraint firstItem="ZAw-Mh-lkQ" firstAttribute="top" secondItem="PDa-zY-3gR" secondAttribute="bottom" constant="80" id="jZq-ff-Icl"/>
+                            <constraint firstItem="RR4-1x-FQs" firstAttribute="leading" secondItem="Oyv-hp-ARV" secondAttribute="leading" id="l1A-bb-7SK"/>
+                            <constraint firstItem="suY-TK-ssT" firstAttribute="top" secondItem="ZAw-Mh-lkQ" secondAttribute="bottom" constant="10" id="oHT-dW-6y1"/>
+                            <constraint firstItem="xEm-Mz-6dT" firstAttribute="centerX" secondItem="bMa-Qa-L4l" secondAttribute="centerX" id="oRQ-qq-21p"/>
+                            <constraint firstItem="Oyv-hp-ARV" firstAttribute="trailing" secondItem="S7Z-li-4fc" secondAttribute="trailing" constant="30" id="pFz-im-aoz"/>
+                            <constraint firstItem="suY-TK-ssT" firstAttribute="leading" secondItem="Oyv-hp-ARV" secondAttribute="leading" constant="30" id="uVi-XZ-nNP"/>
+                            <constraint firstItem="Oyv-hp-ARV" firstAttribute="trailing" secondItem="suY-TK-ssT" secondAttribute="trailing" constant="30" id="w7l-3E-tyB"/>
+                            <constraint firstItem="Oyv-hp-ARV" firstAttribute="bottom" secondItem="xEm-Mz-6dT" secondAttribute="bottom" constant="54" id="xdk-ME-wjk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reciplease" id="xzf-fK-em7"/>
+                    <connections>
+                        <outlet property="addButton" destination="Ifo-x8-XVi" id="bcw-ac-MDs"/>
+                        <outlet property="clearLabel" destination="6PL-d4-spB" id="NXH-wa-fHP"/>
+                        <outlet property="fridgeLabel" destination="S7Z-li-4fc" id="ggF-A5-fAR"/>
+                        <outlet property="ingredientsLabel" destination="ijj-Fl-X41" id="2jw-3O-CZ5"/>
+                        <outlet property="searchButton" destination="xEm-Mz-6dT" id="A0d-to-9BN"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="308.69565217391306" y="839.73214285714278"/>
+        </scene>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="Hib-d4-Q1I">
+            <objects>
+                <viewController id="dlE-57-IRu" customClass="RecipeDetailViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oOZ-ah-qQa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="miv-kP-2mf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8F-bq-QQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2942" y="278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="19c8e65e2a0aa85e8e6912adcd95f9cd" width="401" height="600"/>
+        <image name="2d13d935b78706edd1ea9677f8ee7704" width="564" height="764"/>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
