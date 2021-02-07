@@ -276,7 +276,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDa-zY-3gR" userLabel="Add-Stack View">
-                                <rect key="frame" x="38.5" y="181.5" width="337" height="40"/>
+                                <rect key="frame" x="36" y="187.5" width="342" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7e-V1-kBi">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
@@ -288,7 +288,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifo-x8-XVi">
-                                        <rect key="frame" x="297" y="0.0" width="40" height="40"/>
+                                        <rect key="frame" x="297" y="0.0" width="45" height="40"/>
                                         <color key="backgroundColor" red="0.4078662851" green="0.54773220489999996" blue="0.13811680100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="hJ1-5J-auu"/>
@@ -302,7 +302,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's in your fridge ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7Z-li-4fc">
-                                <rect key="frame" x="30" y="118" width="354" height="48.5"/>
+                                <rect key="frame" x="30" y="118" width="354" height="54.5"/>
                                 <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="45"/>
                                 <color key="textColor" red="0.30297309030000003" green="0.054751344760000001" blue="0.030606849240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -310,10 +310,10 @@
                                 <size key="shadowOffset" width="-1" height="2"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="ZAw-Mh-lkQ" userLabel="Ingredients-Stack View">
-                                <rect key="frame" x="35.5" y="301.5" width="343.5" height="40"/>
+                                <rect key="frame" x="-5.5" y="307.5" width="425" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Ingredients :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijj-Fl-X41">
-                                        <rect key="frame" x="0.0" y="0.0" width="239.5" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="j4O-Ei-nS6"/>
                                         </constraints>
@@ -324,7 +324,7 @@
                                         <size key="shadowOffset" width="-1" height="2"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PL-d4-spB">
-                                        <rect key="frame" x="283.5" y="0.0" width="60" height="40"/>
+                                        <rect key="frame" x="365" y="0.0" width="60" height="40"/>
                                         <color key="backgroundColor" red="0.96513671874999996" green="0.66245624004112391" blue="0.09516010447628713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="sG4-hp-D9h"/>
@@ -338,7 +338,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Apple" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="suY-TK-ssT">
-                                <rect key="frame" x="30" y="351.5" width="354" height="431.5"/>
+                                <rect key="frame" x="30" y="357.5" width="354" height="425.5"/>
                                 <color key="backgroundColor" red="0.91313681039590444" green="0.94712456597222228" blue="0.93958561611218461" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.30297309030000003" green="0.054751344760000001" blue="0.030606849240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="browniescake" family="brownies cake" pointSize="45"/>
