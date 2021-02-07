@@ -1,29 +1,46 @@
-//
-//  FavoriteViewController.swift
-//  Reciplease
-//
-//  Created by Fabrice Mourou on 03/02/2021.
-//
-
 import UIKit
 
 class FavoriteViewController: UIViewController {
+    
+    
+ 
+    @IBOutlet weak var recipesTableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        recipesTableView.delegate = self
+        recipesTableView.dataSource = self
+        recipesTableView.layer.cornerRadius = 20
+        
     }
     
+    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension FavoriteViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Coucou")
     }
-    */
+}
 
+extension FavoriteViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeTableViewCell
+        
+
+        
+        return cell
+    }
+    
+ 
+    
+    
 }

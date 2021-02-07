@@ -18,6 +18,7 @@
 		E2000FBE25CB0338004E6DC4 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000FBD25CB0338004E6DC4 /* FavoriteViewController.swift */; };
 		E2000FC325CB062C004E6DC4 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000FC225CB062C004E6DC4 /* RecipeDetailViewController.swift */; };
 		E2000FC825CB16F8004E6DC4 /* brownies cake.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2000FC725CB16F8004E6DC4 /* brownies cake.otf */; };
+		E2000FCD25CC0AC7004E6DC4 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2000FCC25CC0AC7004E6DC4 /* RecipeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E2000FBD25CB0338004E6DC4 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		E2000FC225CB062C004E6DC4 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		E2000FC725CB16F8004E6DC4 /* brownies cake.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "brownies cake.otf"; sourceTree = "<group>"; };
+		E2000FCC25CC0AC7004E6DC4 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				E2000F7325CAFDC2004E6DC4 /* AppDelegate.swift */,
 				E2000F7525CAFDC2004E6DC4 /* SceneDelegate.swift */,
 				E2000F7925CAFDC2004E6DC4 /* Main.storyboard */,
+				E2000FCC25CC0AC7004E6DC4 /* RecipeTableViewCell.swift */,
 				E2000FC225CB062C004E6DC4 /* RecipeDetailViewController.swift */,
 				E2000FBD25CB0338004E6DC4 /* FavoriteViewController.swift */,
 				E2000FB825CB030C004E6DC4 /* SearchViewController.swift */,
@@ -271,6 +274,7 @@
 				E2000FB925CB030C004E6DC4 /* SearchViewController.swift in Sources */,
 				E2000F7425CAFDC2004E6DC4 /* AppDelegate.swift in Sources */,
 				E2000FBE25CB0338004E6DC4 /* FavoriteViewController.swift in Sources */,
+				E2000FCD25CC0AC7004E6DC4 /* RecipeTableViewCell.swift in Sources */,
 				E2000FC325CB062C004E6DC4 /* RecipeDetailViewController.swift in Sources */,
 				E2000F7625CAFDC2004E6DC4 /* SceneDelegate.swift in Sources */,
 			);
