@@ -12,7 +12,7 @@ class FavoriteViewController: UIViewController {
 
         recipesTableView.delegate = self
         recipesTableView.dataSource = self
-        recipesTableView.layer.cornerRadius = 20
+
         
     }
     
@@ -23,13 +23,13 @@ class FavoriteViewController: UIViewController {
 extension FavoriteViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Coucou")
+       
     }
 }
 
 extension FavoriteViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,6 +38,23 @@ extension FavoriteViewController: UITableViewDataSource {
 
         
         return cell
+    }
+    
+   
+    func numberOfSections(in tableView: UITableView) -> Int {
+        5
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        25
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .none
+        
+        return view
     }
     
  

@@ -13,14 +13,18 @@ class RecipeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var recipeView: UIView!
     @IBOutlet weak var recipeImageView: UIImageView!
-    @IBOutlet weak var detailRecipeButton: UIButton!
+ 
     
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         recipeImageView.layer.cornerRadius = 20
-        detailRecipeButton.layer.cornerRadius = 15
+        recipeImageView.layer.borderColor = UIColor.lightGray.cgColor
+        recipeImageView.layer.borderWidth = 2
+        recipeView.layer.borderWidth = 0.5
+        recipeView.layer.borderColor = UIColor.lightGray.cgColor
+        recipeView.layer.cornerRadius = 20
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
