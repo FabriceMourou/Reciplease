@@ -63,6 +63,12 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>brownies cake.otf</string>
+		<string>ACETONE.otf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

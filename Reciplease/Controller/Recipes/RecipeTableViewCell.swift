@@ -12,8 +12,13 @@ class RecipeTableViewCell: UITableViewCell {
     
 
     @IBOutlet weak var recipeView: UIView!
+    
     @IBOutlet weak var recipeImageView: UIImageView!
- 
+    
+    @IBOutlet weak var titleRecipe: UILabel!
+    @IBOutlet weak var ingredientsLabel: UILabel!
+    @IBOutlet weak var totalTimeLabel: UILabel!
+    @IBOutlet weak var shareAsLabel: UILabel!
     
     
 
@@ -31,6 +36,14 @@ class RecipeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    func configure(recipe: Recipe) {
+        titleRecipe.text = recipe.label
+        ingredientsLabel.text = recipe.ingredients?.first?.text
+//        totalTimeLabel. = recipe.totalTime
+        shareAsLabel.text = recipe.shareAs
     }
 
 }
