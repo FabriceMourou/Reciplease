@@ -26,7 +26,6 @@
 		E2348BBE25DA6F3100094662 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2348BBD25DA6F3100094662 /* NetworkManager.swift */; };
 		E2348BC325DA6F4E00094662 /* NetworkManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2348BC225DA6F4E00094662 /* NetworkManagerError.swift */; };
 		E2348BC825DABD1200094662 /* RecipeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2348BC725DABD1200094662 /* RecipeResponse.swift */; };
-		E25166BE25E3F2F200467990 /* FormattedRecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25166BD25E3F2F200467990 /* FormattedRecipeData.swift */; };
 		E29823AB25DE64F400BA03CB /* ACETONE.otf in Resources */ = {isa = PBXBuildFile; fileRef = E29823AA25DE64F400BA03CB /* ACETONE.otf */; };
 		E2D4733125DE72340097812F /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4733025DE72340097812F /* IngredientTableViewCell.swift */; };
 		E2F4405B25E55EDD006F93AD /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4405A25E55EDD006F93AD /* AlertManager.swift */; };
@@ -81,7 +80,6 @@
 		E2348BBD25DA6F3100094662 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = SOURCE_ROOT; };
 		E2348BC225DA6F4E00094662 /* NetworkManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerError.swift; sourceTree = "<group>"; };
 		E2348BC725DABD1200094662 /* RecipeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResponse.swift; sourceTree = "<group>"; };
-		E25166BD25E3F2F200467990 /* FormattedRecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedRecipeData.swift; sourceTree = "<group>"; };
 		E29823AA25DE64F400BA03CB /* ACETONE.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ACETONE.otf; sourceTree = "<group>"; };
 		E2D4733025DE72340097812F /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IngredientTableViewCell.swift; path = Reciplease/Controller/Fridge/IngredientTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		E2F4405A25E55EDD006F93AD /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertManager.swift; path = Reciplease/Controller/Fridge/AlertManager.swift; sourceTree = SOURCE_ROOT; };
@@ -203,7 +201,6 @@
 				E2348BBD25DA6F3100094662 /* NetworkManager.swift */,
 				E2348BC225DA6F4E00094662 /* NetworkManagerError.swift */,
 				E2348BB825DA6E8B00094662 /* RecipeManager.swift */,
-				E25166BD25E3F2F200467990 /* FormattedRecipeData.swift */,
 				E2348BC725DABD1200094662 /* RecipeResponse.swift */,
 			);
 			path = Model;
@@ -496,7 +493,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2000FB925CB030C004E6DC4 /* FridgeViewController.swift in Sources */,
-				E25166BE25E3F2F200467990 /* FormattedRecipeData.swift in Sources */,
 				E2348BC325DA6F4E00094662 /* NetworkManagerError.swift in Sources */,
 				E2000F7425CAFDC2004E6DC4 /* AppDelegate.swift in Sources */,
 				E2000FBE25CB0338004E6DC4 /* RecipesListViewController.swift in Sources */,

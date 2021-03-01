@@ -2,24 +2,19 @@ import UIKit
 
 class RecipesListViewController: UIViewController {
     
-    var formattedRecipeData: FormattedRecipeData?
+  
     
-    
-//    var recipes: [Recipe] = [
-//        Recipe(uri: nil, label: "Salad", image: nil, source: nil, url: nil, shareAs: "377", yield: nil, dietLabels: nil, healthLabels: nil, cautions: nil, ingredientLines: nil, ingredients: nil, calories: nil, totalWeight: nil, totalTime: nil, totalNutrients: nil, totalDaily: nil, digest: nil)
-//    ]
     
     var recipes: [Recipe] = []
     
-//    var ingredients: [Ingredient] = [
-//        Ingredient(text: "bread", weight: nil, image: nil)
-//    ]
-//
+
+    @IBAction func didTapOnRecipe() {
+    }
     
  
     @IBOutlet weak var recipesTableView: UITableView!
-    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +23,55 @@ class RecipesListViewController: UIViewController {
 
         
     }
+    
+    
+    let alertManager = AlertManager()
+    let recipeManager = RecipeManager()
+    
+    
+    
+    var recipe: [String] = [] {
+        didSet {
+            recipesTableView.reloadData()
+        }
+    }
+    
+    
+    private func displayRecipeDetail(recipes: String?) {
+        
+        recipeManager.fetchRecipesFrom(ingredients: recipe) { [weak self] (result) in
+            
+            DispatchQueue.main.async {
+                switch result {
+                
+                case .failure:
+                    guard let self = self else { return }
+                    self.alertManager.presentAlert(from: self, message: "Failed to get recipe data")
+
+                
+                case .success(let recipes):
+                   
+                    self?.performSegue(withIdentifier: "GoToRecipeDetailSegue", sender: recipes)
+                }
+            }
+            
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        
+        if
+            let recipeDetailViewController = segue.destination as? RecipeDetailViewController,
+            let recipes = sender as? [Recipe]
+            {
+            recipeDetailViewController.recipes = recipes
+            
+        }
+    }
+    
+    
     
     
 
@@ -42,23 +86,27 @@ extension RecipesListViewController: UITableViewDelegate {
 
 extension RecipesListViewController: UITableViewDataSource {
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let recipe = recipes[indexPath.row]
-        //let ingredient = ingredients[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeTableViewCell
         
-        
-
         cell.configure(recipe: recipe)
         
         return cell
     }
+    
+    
+    
+    
     
    
    

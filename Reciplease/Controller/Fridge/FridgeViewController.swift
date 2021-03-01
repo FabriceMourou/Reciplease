@@ -119,6 +119,8 @@ extension FridgeViewController: UITableViewDelegate {
 }
 
 extension FridgeViewController: UITableViewDataSource {
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         ingredients.count
     }
@@ -134,6 +136,8 @@ extension FridgeViewController: UITableViewDataSource {
         return cell
         
     }
+    
+   
     
     
 }

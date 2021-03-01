@@ -1,3 +1,8 @@
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
+//
+//   let recipeResponce = try? newJSONDecoder().decode(RecipeResponce.self, from: jsonData)
+
 import Foundation
 
 // MARK: - RecipeResponce
@@ -25,20 +30,13 @@ struct Recipe: Codable {
     let shareAs: String?
     let yield: Double?
     let dietLabels: [String]?
-    let healthLabels: [HealthLabel]?
-    let cautions: [Caution]?
-    let ingredientLines: [String]?
+    let healthLabels: [String]?
+    let cautions, ingredientLines: [String]?
     let ingredients: [Ingredient]?
     let calories, totalWeight: Double?
     let totalTime: Int?
     let totalNutrients, totalDaily: [String: Total]?
     let digest: [Digest]?
-}
-
-enum Caution: String, Codable {
-    case gluten = "Gluten"
-    case sulfites = "Sulfites"
-    case wheat = "Wheat"
 }
 
 // MARK: - Digest
@@ -73,12 +71,11 @@ enum Unit: String, Codable {
 }
 
 enum HealthLabel: String, Codable {
-    case alcoholCocktail = "Alcohol-Cocktail"
     case alcoholFree = "Alcohol-Free"
     case immunoSupportive = "Immuno-Supportive"
     case peanutFree = "Peanut-Free"
+    case sugarConscious = "Sugar-Conscious"
     case treeNutFree = "Tree-Nut-Free"
-    case vegetarian = "Vegetarian"
 }
 
 // MARK: - Ingredient
@@ -94,3 +91,4 @@ struct Total: Codable {
     let quantity: Double?
     let unit: Unit?
 }
+

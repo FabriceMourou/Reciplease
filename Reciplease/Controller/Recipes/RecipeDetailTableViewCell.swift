@@ -9,22 +9,44 @@ import UIKit
 
 class RecipeDetailTableViewCell: UITableViewCell {
     
+//    static let identifier = "recipeDetailTableViewCell"
+    
+    
+    @IBOutlet weak var recipeDetailView: UIView!
+    
+    @IBOutlet weak var recipeDetailImageView: UIImageView!
+    
+    @IBOutlet weak var recipeDetailTitleLabel: UILabel!
+    
+    @IBOutlet weak var recipeDetailTimeLabel: UILabel!
+    @IBOutlet weak var recipeDetailLikeLabel: UILabel!
     
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        recipeDetailImageView.layer.cornerRadius = 100
+        recipeDetailImageView.layer.borderColor = UIColor.lightGray.cgColor
+        recipeDetailImageView.layer.borderWidth = 2
+        
+        recipeDetailView.layer.borderWidth = 0.5
+        recipeDetailView.layer.borderColor = UIColor.lightGray.cgColor
+        recipeDetailView.layer.cornerRadius = 20
+        
+        
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+     
     }
     
     func configure(recipe: Recipe) {
-        //titleLabel = recipe.label
+        recipeDetailTitleLabel.text = recipe.label
+        recipeDetailLikeLabel.text = recipe.shareAs
+        recipeDetailTimeLabel.text = recipe.totalDaily?.description
     }
 
 }
