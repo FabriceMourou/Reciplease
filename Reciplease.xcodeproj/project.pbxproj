@@ -29,7 +29,7 @@
 		E29823AB25DE64F400BA03CB /* ACETONE.otf in Resources */ = {isa = PBXBuildFile; fileRef = E29823AA25DE64F400BA03CB /* ACETONE.otf */; };
 		E2D4733125DE72340097812F /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4733025DE72340097812F /* IngredientTableViewCell.swift */; };
 		E2F4405B25E55EDD006F93AD /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4405A25E55EDD006F93AD /* AlertManager.swift */; };
-		E2FD32E425DEAFFB00FA73AE /* RecipeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FD32E325DEAFFB00FA73AE /* RecipeDetailTableViewCell.swift */; };
+		E2FC8E9A25ED2D4900EE149C /* RecipeDetailIngredientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FC8E9925ED2D4900EE149C /* RecipeDetailIngredientsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,7 @@
 		E29823AA25DE64F400BA03CB /* ACETONE.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ACETONE.otf; sourceTree = "<group>"; };
 		E2D4733025DE72340097812F /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IngredientTableViewCell.swift; path = Reciplease/Controller/Fridge/IngredientTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		E2F4405A25E55EDD006F93AD /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertManager.swift; path = Reciplease/Controller/Fridge/AlertManager.swift; sourceTree = SOURCE_ROOT; };
-		E2FD32E325DEAFFB00FA73AE /* RecipeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecipeDetailTableViewCell.swift; path = Reciplease/Controller/Recipes/RecipeDetailTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		E2FC8E9925ED2D4900EE149C /* RecipeDetailIngredientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecipeDetailIngredientsTableViewCell.swift; path = Reciplease/View/RecipeDetailIngredientsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		F7A249340521CEF4B3D84C73 /* Pods-RecipleaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipleaseTests.release.xcconfig"; path = "Target Support Files/Pods-RecipleaseTests/Pods-RecipleaseTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,7 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				E2000FC225CB062C004E6DC4 /* RecipeDetailViewController.swift */,
-				E2FD32E325DEAFFB00FA73AE /* RecipeDetailTableViewCell.swift */,
+				E2FC8E9925ED2D4900EE149C /* RecipeDetailIngredientsTableViewCell.swift */,
 			);
 			path = RecipeDetail;
 			sourceTree = "<group>";
@@ -496,11 +496,11 @@
 				E2348BC325DA6F4E00094662 /* NetworkManagerError.swift in Sources */,
 				E2000F7425CAFDC2004E6DC4 /* AppDelegate.swift in Sources */,
 				E2000FBE25CB0338004E6DC4 /* RecipesListViewController.swift in Sources */,
-				E2FD32E425DEAFFB00FA73AE /* RecipeDetailTableViewCell.swift in Sources */,
 				E2348BC825DABD1200094662 /* RecipeResponse.swift in Sources */,
 				E2000FCD25CC0AC7004E6DC4 /* RecipeTableViewCell.swift in Sources */,
 				E2348BBE25DA6F3100094662 /* NetworkManager.swift in Sources */,
 				E2348BB925DA6E8B00094662 /* RecipeManager.swift in Sources */,
+				E2FC8E9A25ED2D4900EE149C /* RecipeDetailIngredientsTableViewCell.swift in Sources */,
 				E2000FC325CB062C004E6DC4 /* RecipeDetailViewController.swift in Sources */,
 				E2000F7625CAFDC2004E6DC4 /* SceneDelegate.swift in Sources */,
 				E2F4405B25E55EDD006F93AD /* AlertManager.swift in Sources */,

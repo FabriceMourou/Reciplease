@@ -37,36 +37,15 @@ class RecipesListViewController: UIViewController {
     }
     
     
-    private func displayRecipeDetail(recipes: String?) {
-        
-        recipeManager.fetchRecipesFrom(ingredients: recipe) { [weak self] (result) in
-            
-            DispatchQueue.main.async {
-                switch result {
-                
-                case .failure:
-                    guard let self = self else { return }
-                    self.alertManager.presentAlert(from: self, message: "Failed to get recipe data")
-
-                
-                case .success(let recipes):
-                   
-                    self?.performSegue(withIdentifier: "GoToRecipeDetailSegue", sender: recipes)
-                }
-            }
-            
-        }
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
         
         if
             let recipeDetailViewController = segue.destination as? RecipeDetailViewController,
-            let recipes = sender as? [Recipe]
+            let recipe = sender as? Recipe
             {
-            recipeDetailViewController.recipes = recipes
+            recipeDetailViewController.recipe = recipe
             
         }
     }
@@ -80,7 +59,8 @@ class RecipesListViewController: UIViewController {
 extension RecipesListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+        let recipe = recipes[indexPath.row]
+        performSegue(withIdentifier: "GoToRecipeDetailSegue", sender: recipe)
     }
 }
 
@@ -103,20 +83,6 @@ extension RecipesListViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
-    
-    
-    
-   
-   
-    
-    
-    
-    
-  
-    
- 
-    
+
     
 }

@@ -49,8 +49,8 @@ class RecipeTableViewCell: UITableViewCell {
     func configure(recipe: Recipe) {
         recipeTitle.text = recipe.label
         ingredientsLabel.text = recipe.ingredients?.first?.text
-//        totalTimeLabel.hashValue = recipe.totalDaily?
-        shareAsLabel.text = recipe.shareAs
+        totalTimeLabel.text = recipe.totalTime?.description
+//        shareAsLabel.text = recipe.shareAs
     }
 
 }
