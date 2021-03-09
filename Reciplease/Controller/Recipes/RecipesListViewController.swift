@@ -22,7 +22,11 @@ class RecipesListViewController: UIViewController {
         recipesTableView.dataSource = self
 
         
+        
+        
     }
+    
+    
     
     
     let alertManager = AlertManager()
@@ -56,6 +60,20 @@ class RecipesListViewController: UIViewController {
 
 }
 
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
+}
+
 extension RecipesListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -80,6 +98,9 @@ extension RecipesListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeTableViewCell
         
         cell.configure(recipe: recipe)
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
+        cell.textLabel?.minimumScaleFactor = 0.5
+        cell.selectionStyle = .none
         
         return cell
     }

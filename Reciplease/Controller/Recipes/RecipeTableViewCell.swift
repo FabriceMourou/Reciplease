@@ -18,12 +18,15 @@ class RecipeTableViewCell: UITableViewCell {
     @IBOutlet weak var recipeTitle: UILabel!
     @IBOutlet weak var ingredientsLabel: UILabel!
     @IBOutlet weak var totalTimeLabel: UILabel!
-    @IBOutlet weak var shareAsLabel: UILabel!
+    @IBOutlet weak var healthLabel: UILabel!
     
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+       
+        
         recipeImageView.layer.cornerRadius = 20
         recipeImageView.layer.borderColor = UIColor.lightGray.cgColor
         recipeImageView.layer.borderWidth = 2
@@ -47,10 +50,16 @@ class RecipeTableViewCell: UITableViewCell {
     
     
     func configure(recipe: Recipe) {
+        
+        let url = URL(string: recipe.image!)
+        
+        recipeImageView.load(url: url!)
+        
         recipeTitle.text = recipe.label
         ingredientsLabel.text = recipe.ingredients?.first?.text
         totalTimeLabel.text = recipe.totalTime?.description
-//        shareAsLabel.text = recipe.shareAs
+        healthLabel.text = recipe.healthLabels?.first
+        
     }
 
 }

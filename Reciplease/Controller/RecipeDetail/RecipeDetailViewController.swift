@@ -15,7 +15,7 @@ class RecipeDetailViewController: UIViewController {
     
     @IBOutlet weak var recipeDetailTitleLabel: UILabel!
     @IBOutlet weak var recipeDetailTimeLabel: UILabel!
-    @IBOutlet weak var recipeDetailLikeLabel: UILabel!
+    @IBOutlet weak var recipeDetailHealthLabel: UILabel!
     @IBOutlet weak var recipeDetailImageView: UIImageView!
     
     
@@ -26,6 +26,11 @@ class RecipeDetailViewController: UIViewController {
     
     @IBOutlet weak var getDirectionsButton: UIButton!
     
+    @IBAction func tapOnGetDirectionsButton(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: (recipe?.url)!)! as URL, options: [:], completionHandler: nil)
+        
+    }
+    
     
   
     
@@ -34,17 +39,14 @@ class RecipeDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        roundShapes()
+        formatting()
         
+        let url = URL(string: (recipe?.image)!)
         
-//        recipeDetailImageCell.layer.borderWidth = 0.5
-//        recipeDetailImageCell.layer.borderColor = UIColor.init(cgColor: #colorLiteral(red: 0.3154009879, green: 0.05233172327, blue: 0.1719847918, alpha: 1)).cgColor
-//        recipeDetailImageCell.layer.cornerRadius = 10
-       
-        
+        recipeDetailImageView.load(url: url!)
         
         recipeDetailTitleLabel.text = recipe?.label
-//        recipeDetailLikeLabel.text = recipe?.shareAs
+        recipeDetailHealthLabel.text = recipe?.healthLabels?.first
         recipeDetailTimeLabel.text = recipe?.totalTime?.description
         
         recipeDetailIngredientsTableView.delegate = self
@@ -53,9 +55,9 @@ class RecipeDetailViewController: UIViewController {
         
     }
 
-    private func roundShapes() {
+    private func formatting() {
         getDirectionsButton.layer.cornerRadius = 10
-        recipeDetailImageView.layer.cornerRadius = 120
+        recipeDetailImageView.layer.cornerRadius = 115
         recipeDetailImageView.layer.borderWidth = 1
         recipeDetailImageView.layer.borderColor = UIColor.lightGray.cgColor
         recipeDetailIngredientsTableView.layer.cornerRadius = 10
@@ -63,12 +65,11 @@ class RecipeDetailViewController: UIViewController {
         recipeDetailIngredientsTableView.layer.borderColor = UIColor.lightGray.cgColor
     }
     
-   
-    
-    
-    
-    
+
 }
+
+
+
 
 extension RecipeDetailViewController: UITableViewDelegate {
     
@@ -96,8 +97,9 @@ extension RecipeDetailViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeDetailIngredientsTableViewCell")!
         
         cell.textLabel?.textColor = UIColor .white
-        cell.textLabel?.font = UIFont.init(name: "ACETONE", size: 23)
-      
+        cell.textLabel?.font = UIFont.init(name: "ACETONE", size: 20)
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
+        cell.textLabel?.minimumScaleFactor = 0.5
         
         
        
