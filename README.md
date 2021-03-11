@@ -16,7 +16,7 @@ L'utilisateur Choisit ses ingrédients :
 - Le bouton "Clear" supprime tous les ingredients de cette liste
 - Le bouton "Search for recipes" lance la recherche des recettes
 
-![Fridge](https://i.imgur.com/R5FU2Ot.png)
+![Fridge](https://i.imgur.com/6vHzB3X.png)
 
 - ### Une vue qui recense la liste des recettes  :
 
@@ -28,7 +28,7 @@ Chaq􏰁ue cellule de la li􏰃􏰂ste cont􏰂ient􏰂 a􏰁u moin􏰃s : 􏰄
 - La d􏰁􏰅urée d'􏰆ex􏰊écut􏰁􏰂ion de la 􏰅recett􏰂􏰂e􏰇 􏰃
 - Le type de la recette (sans gluten, végétarien, ...)
 
-![List](https://i.imgur.com/mHyWzAj.png)
+![List](https://i.imgur.com/tfl8eeZ.png)
 
 S􏰁􏰅ur cett􏰂􏰂e page􏰇 􏰁un bout􏰁􏰂on pe􏰅rme􏰂t de 􏰃sauv􏰁􏰌ega􏰅rder􏰅 la r􏰅ece􏰂􏰂tte dans􏰃 􏰃ses􏰃 fa􏰌vo􏰅ris.􏰃􏰋
 
@@ -45,10 +45,14 @@ La vue de dét􏰂ail de la 􏰅recett􏰂􏰂e doi􏰂t con􏰂teni􏰅r a􏰁u
 - La no􏰂e􏰇 􏰃i elle e􏰃􏰂 p􏰅é􏰃en􏰂e
 - Le type de la recette (sans gluten, végétarien, ...)
 
-Un bouton pour accéder à la liste détaillée des instructions.
+
 Un bouton pour sauvegarder la recette dans ses favoris.
 
-![Détail](https://i.imgur.com/hlKDoKU.png)
+![Detail](https://i.imgur.com/8hyVcXX.png)
+
+Un bouton pour accéder à la liste détaillée des instructions sur une page web.
+
+![Instruction ](https://i.imgur.com/9lEush4.png)
 
 ## Ca que j'ai appris
 
