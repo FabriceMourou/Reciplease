@@ -20,19 +20,39 @@ L'utilisateur Choisit ses ingrédients :
 
 - ### Une vue qui recense la liste des recettes  :
 
-Les résultats de la recherche sont affichés dans une table view
-Chaq􏰁ue élémen􏰂t de la li􏰃􏰂e cont􏰂ient􏰂 a􏰁u moin􏰃s : 􏰄
-- Le l􏰂ist􏰂􏰅e de la 􏰅recett􏰂􏰂e
+Les résultats de la recherche sont affichés dans une **tableView**
+Chaq􏰁ue cellule de la li􏰃􏰂ste cont􏰂ient􏰂 a􏰁u moin􏰃s : 􏰄
+- Le titre de la 􏰅recett􏰂􏰂e
 - L􏰆'image􏰇 de cette recette
-- La list􏰃􏰂e de􏰃 ing􏰅rédien􏰂􏰃ts
+- Un extrait de la list􏰃􏰂e de􏰃 ing􏰅rédien􏰂􏰃ts
 - La d􏰁􏰅urée d'􏰆ex􏰊écut􏰁􏰂ion de la 􏰅recett􏰂􏰂e􏰇 􏰃
-- Le type de la recette (sans gluten, végétarien , ...)
+- Le type de la recette (sans gluten, végétarien, ...)
 
 ![List](https://i.imgur.com/mHyWzAj.png)
 
 S􏰁􏰅ur cett􏰂􏰂e page􏰇 􏰁un bout􏰁􏰂on pe􏰅rme􏰂t de 􏰃sauv􏰁􏰌ega􏰅rder􏰅 la r􏰅ece􏰂􏰂tte dans􏰃 􏰃ses􏰃 fa􏰌vo􏰅ris.􏰃􏰋
 
+Ce Controller va aussi servir à afficher la page des recettes favorites.
+Si cette liste est vide, un message sera donné à l'utilisateur pour lui expliquer comment choisir ses recettes favorites.
+
 - ### Une vue de détail de la recette :
+
+La vue de dét􏰂ail de la 􏰅recett􏰂􏰂e doi􏰂t con􏰂teni􏰅r a􏰁u moin􏰃s : 􏰄
+- Le 􏰂ti􏰂􏰅tre de la r􏰅ece􏰂􏰂tte
+- La li􏰃􏰂ste complè􏰂te de􏰃s ing􏰅rédien􏰂􏰃ts a􏰌vec le dét􏰂ail des􏰃 port􏰅􏰂ion􏰃s
+- L􏰆'image􏰇 
+- La dur􏰁􏰅ée d􏰆'ex􏰊éc􏰁􏰂ution de la r􏰅ecett􏰂􏰂e􏰇 
+- La no􏰂e􏰇 􏰃i elle e􏰃􏰂 p􏰅é􏰃en􏰂e
+- Le type de la recette (sans gluten, végétarien, ...)
+
+Un bouton pour accéder à la liste détaillée des instructions.
+Un bouton pour sauvegarder la recette dans ses favoris.
 
 ![Détail](https://i.imgur.com/hlKDoKU.png)
 
+## Ca que j'ai appris
+
+- Sauvegarder des données avec Core Data
+- Utiliser le delegate pattern
+- Utiliser une librairie open source 
+- Gérer une Table View
